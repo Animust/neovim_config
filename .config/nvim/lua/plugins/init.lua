@@ -270,4 +270,6 @@ return {
 --      require("plugins.configs.rust_tools_config")
 --    end,
 --  },
+  { 'echasnovski/mini.nvim', version = false },
+
 }
