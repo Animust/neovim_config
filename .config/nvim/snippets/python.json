@@ -6,7 +6,7 @@
       "# ****************************************************************************",
       "# $TM_FILENAME",
       "# Created on $CURRENT_DAY_NAME_SHORT $CURRENT_MONTH_NAME_SHORT $CURRENT_DATE $CURRENT_YEAR",
-      "# Author:   ${1:Trung Tran}",
+      "# Author:   ${1:Author}",
       "#",
       "# Copyright $CURRENT_YEAR ${2:Company}. All Rights Reserved.",
       "# ****************************************************************************"

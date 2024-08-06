@@ -69,13 +69,15 @@ return {
     "folke/which-key.nvim", -- Popup with possible keybindings of the command you started to type
     event = "VeryLazy",
     -- opts = {}
-    config = function()
-      require("which-key").setup {
-        window = {
-          border = "rounded"
-        }
-      }
-    end,
+    keys = {
+      {
+        "<leader>?",
+        function()
+          require("which-key").show({ global = false })
+        end,
+        desc = "Buffer Local Keymaps (which-key)",
+      },
+    },
   },
   {
     "goolord/alpha-nvim", -- Greeter dashboard
@@ -256,20 +258,20 @@ return {
   -- INFO: Debuggers
   'mfussenegger/nvim-dap-python',
   'rcarriga/nvim-dap-ui',
---  'theHamsta/nvim-dap-virtual-text',
---  {
---    'mfussenegger/nvim-dap',
---    config = function()
---      require("plugins.configs.dap_configs")
---    end,
---  },
---
---  {
---    'simrat39/rust-tools.nvim',
---    config = function()
---      require("plugins.configs.rust_tools_config")
---    end,
---  },
-  { 'echasnovski/mini.nvim', version = false },
+  --  'theHamsta/nvim-dap-virtual-text',
+  --  {
+  --    'mfussenegger/nvim-dap',
+  --    config = function()
+  --      require("plugins.configs.dap_configs")
+  --    end,
+  --  },
+  --
+  --  {
+  --    'simrat39/rust-tools.nvim',
+  --    config = function()
+  --      require("plugins.configs.rust_tools_config")
+  --    end,
+  --  },
+  { 'echasnovski/mini.icons', version = '*' },
 
 }
