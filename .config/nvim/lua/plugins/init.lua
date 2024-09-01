@@ -71,7 +71,7 @@ return {
     -- opts = {}
     config = function()
       require("which-key").setup {
-        window = {
+        win = {
           border = "rounded"
         }
       }
@@ -270,6 +270,5 @@ return {
 --      require("plugins.configs.rust_tools_config")
 --    end,
 --  },
-  { 'echasnovski/mini.nvim', version = false },
-
+{ 'echasnovski/mini.nvim', version = false },
 }
