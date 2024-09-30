@@ -80,7 +80,7 @@ git clone "${REPOSITORY_URL}" "${NEOVIM_PATH}" -b "${NEOVIM_VERSION}"
 
 echo "========================================"
 echo "Configuring Neovim"
-cp -r .config ~/.config
+cp -r .config ~/
 
 nvim --headless "+Lazy! sync" +qa
 
