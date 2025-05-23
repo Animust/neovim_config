@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Default values
-NEOVIM_VERSION=v0.9.4
+NEOVIM_VERSION=v0.11.1
 NEOVIM_PATH=~/open_source/neovim/
 
 while [[ "${1}" ]]; do
