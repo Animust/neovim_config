@@ -20,7 +20,7 @@ local function getGreeting(name)
     [2] = "  Good morning",
     [3] = "  Good afternoon",
     [4] = "  Good evening",
-    [5] = "望 Good night",
+    [5] = "󰖔 Good night",
   }
   local greetingIndex = 0
   if hour == 23 or hour < 7 then
@@ -345,12 +345,12 @@ local buttons = {
   val = {
     { type = "text",    val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
     { type = "padding", val = 1 },
-    dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
-    dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
+    dashboard.button("f", "󰈞  Find file", ":Telescope find_files <CR>"),
+    dashboard.button("t", "󰊄  Find text", ":Telescope live_grep <CR>"),
     dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
     dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
     dashboard.button("u", "  Update plugins", ":Lazy sync<CR>"),
-    dashboard.button("q", "  Quit", ":qa<CR>"),
+    dashboard.button("q", "󰅚  Quit", ":qa<CR>"),
   },
   position = "center",
 }
